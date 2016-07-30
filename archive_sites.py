@@ -56,8 +56,34 @@ class Site(object):
 		return "<Site: %s, seeds %d>" % (self.name,len(self.seeds))
 
 
-	def archive_seed(self):
-		os.system('httrack "%(seed_url)s" -O "%(archive_path)s" "+*.all.net/*" -v')
+	def _capture_url(self, seed):
+		'''
+		where 'options' is string of comand line options
+		'''
+
+		# build cmd
+		cmd = 'httrack "%(seed_url)s" -O "%(archive_path)s" %(options)s' % {
+				"seed_url":seed['url'],
+				"archive_path":self.archive_path,
+				"options":seed['options']
+			}
+		logging.debug(cmd)
+
+		# fire
+		return os.system(cmd)
+
+
+	def archive_all_seeds(self):
+
+		logging.debug('archiving all seeds')
+
+		results = []
+		
+		for i,seed in enumerate(self.seeds):
+			logging.debug('seed url %d/%d: %s' % (i+1,len(self.seeds),seed['url']))
+			results.append(self._capture_url(seed))
+
+		return True
 
 
 # main loop
@@ -74,8 +100,9 @@ def archive_sites():
 		# DEBUG
 		if site['name'] == "HathiTrust TRAC":
 			logging.debug('TESTING')
-			site_handle = Site(site['name'],site['seeds'])
+			site_handle = Site(site['name'], site['seeds'])
 			logging.debug(site_handle)
+			site_handle.archive_all_seeds()
 
 		else:
 			logging.debug('SKIPPING')

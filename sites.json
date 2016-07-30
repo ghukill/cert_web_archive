@@ -4,7 +4,8 @@
 			"name": "HathiTrust TRAC",
 			"seeds": [
 				{
-					"url":"https://www.hathitrust.org/trac"
+					"url":"https://www.hathitrust.org/trac",
+					"options":""
 				}
 			]
 		},
