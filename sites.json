@@ -1,12 +1,12 @@
 {
+	"mode":"DEBUG",
 	"sites": [
 		{
 			"name": "HathiTrust TRAC",
 			"seeds": [
 				{
 					"url":"https://www.hathitrust.org/trac",
-					"options":""
-				}
+					"options":""				}
 			]
 		},
 		{
@@ -99,7 +99,7 @@
 			"seeds": [
 				{
 					"url":"Portico news & press releases",
-					"options":""
+					"options":""	
 				}
 			]
 		}

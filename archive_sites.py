@@ -97,15 +97,8 @@ def archive_sites():
 	for site in sites['sites']:
 		logging.debug('beginning archive process for: %s' % (site['name']))
 
-		# DEBUG
-		if site['name'] == "Scholars Portal TRAC wiki":
-			logging.debug('TESTING')
-			site_handle = Site(site['name'], site['seeds'])
-			logging.debug(site_handle)
-			site_handle.archive_all_seeds()
-
-		else:
-			logging.debug('SKIPPING')
+		# if debug, only fire debug seeds
+		# STOPPING HERE
 
 
 
