@@ -62,7 +62,7 @@ class Site(object):
 		'''
 
 		# build cmd
-		cmd = 'httrack "%(seed_url)s" -O "%(archive_path)s" %(options)s' % {
+		cmd = 'httrack "%(seed_url)s" -O "%(archive_path)s" --mirror -v -r3 %(options)s' % {
 				"seed_url":seed['url'],
 				"archive_path":self.archive_path,
 				"options":seed['options']
@@ -98,7 +98,7 @@ def archive_sites():
 		logging.debug('beginning archive process for: %s' % (site['name']))
 
 		# DEBUG
-		if site['name'] == "HathiTrust TRAC":
+		if site['name'] == "Scholars Portal TRAC wiki":
 			logging.debug('TESTING')
 			site_handle = Site(site['name'], site['seeds'])
 			logging.debug(site_handle)

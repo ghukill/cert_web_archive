@@ -13,7 +13,8 @@
 			"name": "Chronopolis TRAC",
 			"seeds": [
 				{
-					"url":"http://libraries.ucsd.edu/chronopolis/trac/"
+					"url":"http://libraries.ucsd.edu/chronopolis/trac/",
+					"options":""
 				}
 			]
 		},
@@ -21,7 +22,8 @@
 			"name": "Canadiana TRAC",
 			"seeds": [
 				{
-					"url":"http://www.canadiana.ca/en/tdr-certification"
+					"url":"http://www.canadiana.ca/en/tdr-certification",
+					"options":""
 				}
 			]
 		},
@@ -29,7 +31,8 @@
 			"name": "Portico certification announcement & links",
 			"seeds": [
 				{
-					"url":"http://www.portico.org/digital-preservation/the-archive-content-access/archive-certification"
+					"url":"http://www.portico.org/digital-preservation/the-archive-content-access/archive-certification",
+					"options":""
 				}
 			]
 		},
@@ -37,7 +40,8 @@
 			"name": "Scholars Portal TRAC wiki",
 			"seeds": [
 				{
-					"url":"https://spotdocs.scholarsportal.info/display/OAIS/Home"
+					"url":"https://spotdocs.scholarsportal.info/display/OAIS/Home",
+					"options":""
 				}
 			]
 		},
@@ -45,7 +49,8 @@
 			"name": "CLOCKSS TRAC wiki",
 			"seeds": [
 				{
-					"url":"https://documents.clockss.org/index.php?title=Main_Page"
+					"url":"https://documents.clockss.org/index.php?title=Main_Page",
+					"options":""
 				}
 			]
 		},
@@ -53,7 +58,8 @@
 			"name": "Canadiana.org blog",
 			"seeds": [
 				{
-					"url":"http://www.canadiana.ca/en/blog"
+					"url":"http://www.canadiana.ca/en/blog",
+					"options":""
 				}
 			]
 		},
@@ -61,7 +67,8 @@
 			"name": "CLOCKSS news",
 			"seeds": [
 				{
-					"url":"https://www.clockss.org/clockss/News"
+					"url":"https://www.clockss.org/clockss/News",
+					"options":""
 				}
 			]
 		},
@@ -69,7 +76,8 @@
 			"name": "CLOCKSS, david rosenthal's blog",
 			"seeds": [
 				{
-					"url":"https://www.clockss.org/clockss/News"
+					"url":"https://www.clockss.org/clockss/News",
+					"options":""
 				}
 			]
 		},
@@ -77,10 +85,12 @@
 			"name": "HathiTrust blogs",
 			"seeds": [
 				{
-					"url":"https://www.hathitrust.org/blogs/perspectives-from-hathitrust"
+					"url":"https://www.hathitrust.org/blogs/perspectives-from-hathitrust",
+					"options":""
 				},
 				{
-					"url":"https://www.hathitrust.org/blogs/large-scale-search"
+					"url":"https://www.hathitrust.org/blogs/large-scale-search",
+					"options":""
 				}
 			]
 		},
@@ -88,7 +98,8 @@
 			"name": "Portico news & press releases",
 			"seeds": [
 				{
-					"url":"Portico news & press releases"
+					"url":"Portico news & press releases",
+					"options":""
 				}
 			]
 		}
