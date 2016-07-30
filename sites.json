@@ -1,0 +1,96 @@
+{
+	"sites": [
+
+		{
+			"name": "HathiTrust TRAC",
+			"seeds": [
+				{
+					"url":"https://www.hathitrust.org/trac"
+				}
+			]
+		},
+		{
+			"name": "Chronopolis TRAC",
+			"seeds": [
+				{
+					"url":"http://libraries.ucsd.edu/chronopolis/trac/"
+				}
+			]
+		},
+		{
+			"name": "Canadiana TRAC",
+			"seeds": [
+				{
+					"url":"http://www.canadiana.ca/en/tdr-certification"
+				}
+			]
+		},
+		{
+			"name": "Portico certification announcement & links",
+			"seeds": [
+				{
+					"url":"http://www.portico.org/digital-preservation/the-archive-content-access/archive-certification"
+				}
+			]
+		},
+		{
+			"name": "Scholars Portal TRAC wiki",
+			"seeds": [
+				{
+					"url":"https://spotdocs.scholarsportal.info/display/OAIS/Home"
+				}
+			]
+		},
+		{
+			"name": "CLOCKSS TRAC wiki",
+			"seeds": [
+				{
+					"url":"https://documents.clockss.org/index.php?title=Main_Page"
+				}
+			]
+		},
+		{
+			"name": "Canadiana.org blog",
+			"seeds": [
+				{
+					"url":"http://www.canadiana.ca/en/blog"
+				}
+			]
+		},
+		{
+			"name": "CLOCKSS news",
+			"seeds": [
+				{
+					"url":"https://www.clockss.org/clockss/News"
+				}
+			]
+		},
+		{
+			"name": "CLOCKSS, david rosenthal's blog",
+			"seeds": [
+				{
+					"url":"https://www.clockss.org/clockss/News"
+				}
+			]
+		},
+		{
+			"name": "HathiTrust blogs",
+			"seeds": [
+				{
+					"url":"https://www.hathitrust.org/blogs/perspectives-from-hathitrust"
+				},
+				{
+					"url":"https://www.hathitrust.org/blogs/large-scale-search"
+				}
+			]
+		},
+		{
+			"name": "Portico news & press releases",
+			"seeds": [
+				{
+					"url":"Portico news & press releases"
+				}
+			]
+		}
+	]
+}
