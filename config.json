@@ -1,4 +1,5 @@
 {
+	"root_archive_path":"/home/commander/projects/cert_web_archive/archive/",
 	"sites": [
 		{
 			"name": "HathiTrust TRAC",
@@ -11,7 +12,7 @@
 		},
 		{
 			"name": "Chronopolis TRAC",
-			"capture": true,
+			"capture": false,
 			"seeds": [
 				{
 					"url":"http://libraries.ucsd.edu/chronopolis/",
@@ -21,7 +22,7 @@
 		},
 		{
 			"name": "Canadiana TRAC",
-			"capture": false	,
+			"capture": true	,
 			"seeds": [
 				{
 					"url":"http://www.canadiana.ca/en/tdr-certification",

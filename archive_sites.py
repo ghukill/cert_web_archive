@@ -21,7 +21,7 @@ logging.getLogger('').addHandler(console)
 
 
 # global config
-ROOT_ARCHIVE_PATH = '/home/commander/projects/cert_web_archive/archive/'
+
 
 
 # class for site object
@@ -35,13 +35,13 @@ class Site(object):
         :param seeds: list of seed urls
 	'''
 
-	def __init__(self, site_meta):
+	def __init__(self, site_meta, config):
 
 
 		self.name = site_meta['name']
 		self.seeds = site_meta['seeds']
 		self.id = hashlib.md5(self.name).hexdigest()
-		self.archive_path = "%s%s" % (ROOT_ARCHIVE_PATH,self.id)
+		self.archive_path = "%s%s" % (config['root_archive_path'],self.id)
 
 		# gen archive directory if not already present
 		if not os.path.exists(self.archive_path):
@@ -90,14 +90,14 @@ class Site(object):
 def archive_sites():
 
 	# import sites
-	with open('sites.json') as fd:
+	with open('config.json') as fd:
 		config = json.loads(fd.read())
 
 	# archive sites
 	for site_meta in config['sites']:
 		if site_meta['capture']:
 			logging.debug('beginning archive process for: %s' % (site_meta['name']))
-			site_handle = Site(site_meta)
+			site_handle = Site(site_meta,config)
 			site_handle.archive_all_seeds()
 
 
