@@ -1,105 +1,115 @@
 {
-	"mode":"DEBUG",
 	"sites": [
 		{
 			"name": "HathiTrust TRAC",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://www.hathitrust.org/trac",
-					"options":""				}
+					"options":"--user-agent 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.117 Safari/537.36' +*.doc/*.pdf/*.docx"	}
 			]
 		},
 		{
 			"name": "Chronopolis TRAC",
+			"capture": true,
 			"seeds": [
 				{
-					"url":"http://libraries.ucsd.edu/chronopolis/trac/",
-					"options":""
+					"url":"http://libraries.ucsd.edu/chronopolis/",
+					"options":"+www.crl.edu/*.pdf +*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "Canadiana TRAC",
+			"capture": false	,
 			"seeds": [
 				{
 					"url":"http://www.canadiana.ca/en/tdr-certification",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "Portico certification announcement & links",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"http://www.portico.org/digital-preservation/the-archive-content-access/archive-certification",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "Scholars Portal TRAC wiki",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://spotdocs.scholarsportal.info/display/OAIS/Home",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "CLOCKSS TRAC wiki",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://documents.clockss.org/index.php?title=Main_Page",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "Canadiana.org blog",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"http://www.canadiana.ca/en/blog",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "CLOCKSS news",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://www.clockss.org/clockss/News",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "CLOCKSS, david rosenthal's blog",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://www.clockss.org/clockss/News",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "HathiTrust blogs",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"https://www.hathitrust.org/blogs/perspectives-from-hathitrust",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				},
 				{
 					"url":"https://www.hathitrust.org/blogs/large-scale-search",
-					"options":""
+					"options":"+*.doc/*.pdf/*.docx"
 				}
 			]
 		},
 		{
 			"name": "Portico news & press releases",
+			"capture": false,
 			"seeds": [
 				{
 					"url":"Portico news & press releases",
-					"options":""	
+					"options":"+*.doc/*.pdf/*.docx"	
 				}
 			]
 		}

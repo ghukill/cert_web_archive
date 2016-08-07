@@ -35,11 +35,11 @@ class Site(object):
         :param seeds: list of seed urls
 	'''
 
-	def __init__(self, name, seeds):
+	def __init__(self, site_meta):
 
 
-		self.name = name
-		self.seeds = seeds
+		self.name = site_meta['name']
+		self.seeds = site_meta['seeds']
 		self.id = hashlib.md5(self.name).hexdigest()
 		self.archive_path = "%s%s" % (ROOT_ARCHIVE_PATH,self.id)
 
@@ -91,15 +91,14 @@ def archive_sites():
 
 	# import sites
 	with open('sites.json') as fd:
-		sites = json.loads(fd.read())
+		config = json.loads(fd.read())
 
 	# archive sites
-	for site in sites['sites']:
-		logging.debug('beginning archive process for: %s' % (site['name']))
-
-		# if debug, only fire debug seeds
-		# STOPPING HERE
-
+	for site_meta in config['sites']:
+		if site_meta['capture']:
+			logging.debug('beginning archive process for: %s' % (site_meta['name']))
+			site_handle = Site(site_meta)
+			site_handle.archive_all_seeds()
 
 
 
